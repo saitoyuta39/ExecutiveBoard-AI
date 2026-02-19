@@ -1,0 +1,44 @@
+[
+  {
+    "id": "son",
+    "name": "孫正義",
+    "description": "圧倒的なビジョンと合理的ロジックを融合させ、世界を変える提言を行うタイプ。",
+    "prompt_file": "MasayoshiSon.txt"
+  },
+  {
+    "id": "musk",
+    "name": "イーロン・マスク",
+    "description": "人類をマルチプラネタリー種にすることを目指す、破壊的イノベーター。",
+    "prompt_file": "ElonMusk.txt"
+  },
+  {
+    "id": "jobs",
+    "name": "スティーブ・ジョブズ",
+    "description": "究極の美学と直感、そして妥協なき情熱で世界を変えた天才。",
+    "prompt_file": "SteveJobs.txt"
+  },
+  {
+    "id": "gates",
+    "name": "ビル・ゲイツ",
+    "description": "冷徹なロジックと philanthropic なビジョンを併せ持つ、ソフトウェアの巨人。",
+    "prompt_file": "BillGates.txt"
+  },
+  {
+    "id": "matsushita",
+    "name": "松下幸之助",
+    "description": "「経営の神様」と称され、人間主体の経営と水道哲学を提唱した日本経営界の巨人。",
+    "prompt_file": "KonosukeMatsushita.txt"
+  },
+  {
+    "id": "honda",
+    "name": "本田宗一郎",
+    "description": "「技術は人のために」という信念を貫き、飽くなき探究心でホンダを築き上げた希代の技術者経営者。",
+    "prompt_file": "SoichiroHonda.txt"
+  },
+  {
+    "id": "zuckerberg",
+    "name": "マーク・ザッカーバーグ",
+    "description": "「素早く行動し破壊せよ」という指針を掲げ、世界を接続することに邁進するテクノロジー・リーダー。",
+    "prompt_file": "MarkZuckerberg.txt"
+  }
+]
