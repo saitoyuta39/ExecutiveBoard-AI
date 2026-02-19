@@ -100,7 +100,7 @@ export default function ChatPage() {
         <aside className="w-80 bg-white border-r p-6 overflow-y-auto hidden md:block">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">経営者プロファイル</h2>
           <div className="space-y-4">
-            {profiles.map(profile => (
+            {Array.isArray(profiles) && profiles.map(profile => (
               <button
                 key={profile.id}
                 onClick={() => {

@@ -1,7 +1,7 @@
 import os
 import json
 from typing import List, Optional, Dict
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import google.generativeai as genai
@@ -19,6 +19,7 @@ SUMMARIZE_INSTRUCTION_PATH = os.path.join(PROMPTS_DIR, "summarize_instruction.tx
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 app = FastAPI()
+router = APIRouter(prefix="/backend")
 
 app.add_middleware(
     CORSMiddleware,
@@ -111,14 +112,14 @@ class SummarizeRequest(BaseModel):
     topic: str
     history: List[DiscussionMessage]
 
-@app.get("/profiles")
+@router.get("/profiles")
 async def get_profiles():
     # Reload profiles to reflect changes in text files without restarting (Optional, for development)
     global PROFILES
     PROFILES = load_profiles()
     return [{"id": k, "name": v["name"], "description": v["description"]} for k, v in PROFILES.items()]
 
-@app.post("/chat")
+@router.post("/chat")
 async def chat(request: ChatRequest):
     if request.profile_id not in PROFILES:
         raise HTTPException(status_code=404, detail="Profile not found")
@@ -144,7 +145,7 @@ async def chat(request: ChatRequest):
         print(f"Error in chat: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/discussion")
+@router.post("/discussion")
 async def discussion(request: DiscussionRequest):
     # Reload prompts to ensure the latest versions are used
     global PROFILES
@@ -195,7 +196,7 @@ async def discussion(request: DiscussionRequest):
         print(f"Error in discussion: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/summarize")
+@router.post("/summarize")
 async def summarize(request: SummarizeRequest):
     if not request.history:
         raise HTTPException(status_code=400, detail="History is empty")
@@ -217,6 +218,8 @@ async def summarize(request: SummarizeRequest):
     except Exception as e:
         print(f"Error in summarize: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+app.include_router(router)
 
 if __name__ == "__main__":
     import uvicorn

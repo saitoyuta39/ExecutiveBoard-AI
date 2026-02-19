@@ -160,7 +160,7 @@ export default function DiscussionPage() {
             <div>
               <div className="flex items-center justify-between mb-2">
                 <label className="text-sm font-medium text-gray-700">AI経営者 A</label>
-                {profileA && (
+                {profileA && Array.isArray(profiles) && (
                   <div className="group relative">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 hover:text-gray-600 cursor-help" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -176,7 +176,7 @@ export default function DiscussionPage() {
                 onChange={(e) => setProfileA(e.target.value)}
                 className="w-full border rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-50 text-gray-800"
               >
-                {profiles.map(p => (
+                {Array.isArray(profiles) && profiles.map(p => (
                   <option key={p.id} value={p.id}>{p.name}</option>
                 ))}
               </select>
@@ -189,7 +189,7 @@ export default function DiscussionPage() {
             <div>
               <div className="flex items-center justify-between mb-2">
                 <label className="text-sm font-medium text-gray-700">AI経営者 B</label>
-                {profileB && (
+                {profileB && Array.isArray(profiles) && (
                   <div className="group relative">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 hover:text-gray-600 cursor-help" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -205,7 +205,7 @@ export default function DiscussionPage() {
                 onChange={(e) => setProfileB(e.target.value)}
                 className="w-full border rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-50 text-gray-800"
               >
-                {profiles.map(p => (
+                {Array.isArray(profiles) && profiles.map(p => (
                   <option key={p.id} value={p.id}>{p.name}</option>
                 ))}
               </select>
