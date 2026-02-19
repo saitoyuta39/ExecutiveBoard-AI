@@ -1,44 +1,104 @@
 [
   {
-    "id": "son",
-    "name": "孫正義",
-    "description": "圧倒的なビジョンと合理的ロジックを融合させ、世界を変える提言を行うタイプ。",
-    "prompt_file": "MasayoshiSon.txt"
-  },
-  {
     "id": "musk",
     "name": "イーロン・マスク",
-    "description": "人類をマルチプラネタリー種にすることを目指す、破壊的イノベーター。",
+    "description": "テスラ・SpaceX創業者。人類をマルチプラネタリー種にすることを目指す、破壊的イノベーター。",
     "prompt_file": "ElonMusk.txt"
+  },
+  {
+    "id": "disney",
+    "name": "ウォルト・ディズニー",
+    "description": "ディズニー創業者。飽くなき想像力と緻密な戦略で「夢を現実にする」ことに全人生を賭けた、エンターテインメントの革新者。",
+    "prompt_file": "WaltDisney.txt"
+  },
+  {
+    "id": "buffett",
+    "name": "ウォーレン・バフェット",
+    "description": "バークシャー・ハサウェイ会長兼CEO。「オマハの賢人」と呼ばれ、誠実さと合理性を重んじる世界最高の投資家。",
+    "prompt_file": "WarrenBuffett.txt"
+  },
+  {
+    "id": "chanel",
+    "name": "ココ・シャネル",
+    "description": "シャネル創業者。既成概念を打ち破る「引き算の美学」で、女性のファッションと生き方に革命を起こしたスタイル・アイコン。",
+    "prompt_file": "CocoChanel.txt"
+  },
+  {
+    "id": "altman",
+    "name": "サム・アルトマン",
+    "description": "OpenAI CEO。AIの進化が人類の未来を救うと信じ、複利的な成長と計算されたリスクを愛するビジョナリー。",
+    "prompt_file": "SamAltman.txt"
+  },
+  {
+    "id": "ma",
+    "name": "ジャック・マー",
+    "description": "アリババグループ創業者。不屈の精神で中国最大のEC帝国を築き上げた、ストーリーテリングと組織作りの達人。",
+    "prompt_file": "JackMa.txt"
+  },
+  {
+    "id": "bezos",
+    "name": "ジェフ・ベゾス",
+    "description": "Amazon創業者。徹底した「顧客中心主義」と「長期思考」で、世界最大のEC・クラウド帝国を築いた合理主義者。",
+    "prompt_file": "JeffBezos.txt"
   },
   {
     "id": "jobs",
     "name": "スティーブ・ジョブズ",
-    "description": "究極の美学と直感、そして妥協なき情熱で世界を変えた天才。",
+    "description": "アップル共同創業者。究極の美学と直感、そして妥協なき情熱で世界を変えた天才。",
     "prompt_file": "SteveJobs.txt"
+  },
+  {
+    "id": "schultz",
+    "name": "ハワード・シュルツ",
+    "description": "スターバックス元CEO。コーヒーを「サードプレイス」として定義し、ブランドの魂と人間性を重視する情熱的なリーダー。",
+    "prompt_file": "HowardSchultz.txt"
   },
   {
     "id": "gates",
     "name": "ビル・ゲイツ",
-    "description": "冷徹なロジックと philanthropic なビジョンを併せ持つ、ソフトウェアの巨人。",
+    "description": "マイクロソフト共同創業者。冷徹なロジックと philanthropic なビジョンを併せ持つ、ソフトウェアの巨人。",
     "prompt_file": "BillGates.txt"
   },
   {
-    "id": "matsushita",
-    "name": "松下幸之助",
-    "description": "「経営の神様」と称され、人間主体の経営と水道哲学を提唱した日本経営界の巨人。",
-    "prompt_file": "KonosukeMatsushita.txt"
-  },
-  {
-    "id": "honda",
-    "name": "本田宗一郎",
-    "description": "「技術は人のために」という信念を貫き、飽くなき探究心でホンダを築き上げた希代の技術者経営者。",
-    "prompt_file": "SoichiroHonda.txt"
+    "id": "drucker",
+    "name": "ピーター・F・ドラッカー",
+    "description": "「マネジメントの父」と称される社会生態学者。真摯さ（Integrity）を最重視し、組織と個人のあり方を問い続ける知の巨人。",
+    "prompt_file": "PeterFDrucker.txt"
   },
   {
     "id": "zuckerberg",
     "name": "マーク・ザッカーバーグ",
-    "description": "「素早く行動し破壊せよ」という指針を掲げ、世界を接続することに邁進するテクノロジー・リーダー。",
+    "description": "Meta（旧Facebook）創業者。「素早く行動し破壊せよ」という指針を掲げ、世界を接続することに邁進するテクノロジー・リーダー。",
     "prompt_file": "MarkZuckerberg.txt"
+  },
+  {
+    "id": "son",
+    "name": "孫正義",
+    "description": "ソフトバンクグループ創業者。圧倒的なビジョンと合理的ロジックを融合させ、世界を変える提言を行うタイプ。",
+    "prompt_file": "MasayoshiSon.txt"
+  },
+  {
+    "id": "honda",
+    "name": "本田宗一郎",
+    "description": "本田技研工業（ホンダ）創業者。「技術は人のために」という信念を貫き、飽くなき探究心でホンダを築き上げた希代の技術者経営者。",
+    "prompt_file": "SoichiroHonda.txt"
+  },
+  {
+    "id": "matsushita",
+    "name": "松下幸之助",
+    "description": "パナソニック（旧松下電器）創業者。「経営の神様」と称され、人間主体の経営と水道哲学を提唱した日本経営界の巨人。",
+    "prompt_file": "KonosukeMatsushita.txt"
+  },
+  {
+    "id": "yanai",
+    "name": "柳井正",
+    "description": "ファーストリテイリング（ユニクロ）創業者。「一勝九敗」の精神で日本から世界一のアパレル企業を目指す、現場主義の経営者。",
+    "prompt_file": "TadashiYanai.txt"
+  },
+  {
+    "id": "morita",
+    "name": "盛田昭夫",
+    "description": "ソニー共同創業者。「世界のモリタ」として日本製品の品質を世界に知らしめた、情熱的でグローバルな経営者。",
+    "prompt_file": "AkioMorita.txt"
   }
 ]
